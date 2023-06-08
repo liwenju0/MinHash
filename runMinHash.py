@@ -123,7 +123,7 @@ class MinHash:
         s1 = self.docsAsShingleSets[i]
         s2 = self.docsAsShingleSets[j]
         J = (len(s1.intersection(s2)) / len(s1.union(s2)))
-        print("  %5s --> %5s   %.2f     %.2f" % (self.docs[i], self.docs[j], estJ, J))
+        print("  %5s --> %5s  Minhash相似度： %.2f  Jacade距离：   %.2f" % (self.docs[i], self.docs[j], estJ, J))
 
 
 
